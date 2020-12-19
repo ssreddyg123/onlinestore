@@ -1,7 +1,8 @@
 package com.dsg.onlinestore.model;
 
-import java.util.Set;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -31,9 +32,9 @@ public class Order {
 	private double price;
 	
 	@OneToMany(mappedBy="order")
-    private Set<OrderItem> orderItems;
+    private List<OrderItem> orderItems;
 	
-	@ManyToOne
+	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name="user_name", nullable=false)
 	private User user;
 

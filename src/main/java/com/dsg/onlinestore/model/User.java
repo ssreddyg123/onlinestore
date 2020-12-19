@@ -1,8 +1,9 @@
 package com.dsg.onlinestore.model;
 
 import java.time.LocalDate;
-import java.util.Set;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
@@ -33,10 +34,10 @@ public class User {
 	@NotNull(message = "Birthday must be set")
 	private LocalDate birthday;
 
-	@OneToMany(mappedBy = "user")
-	private Set<Address> billingAddresses;
+	@OneToMany(mappedBy = "user", cascade = { CascadeType.ALL  })
+	private List<Address> billingAddresses;
 
-	@OneToMany(mappedBy = "user")
-	private Set<Order> orders;
+	@OneToMany(mappedBy = "user", cascade = { CascadeType.ALL  })
+	private List<Order> orders;
 
 }

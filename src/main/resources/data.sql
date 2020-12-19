@@ -28,3 +28,24 @@ INSERT INTO CRATES(name,crate_pic, no_of_bottles,price,in_stock,beverage_id)
 VALUES ('box','https://unsplash.com/photos/S7VRvq6sCvA',30,50,600,2);
 INSERT INTO CRATES(name,crate_pic, no_of_bottles,price,in_stock,beverage_id) 
 VALUES ('FloraJar','https://unsplash.com/photos/S7VRvq6sCvA',30,45,650,3);
+
+
+INSERT INTO ORDERS(price,user_name) VALUES (300.50,'user1');
+INSERT INTO ORDERS(price,user_name) VALUES (500.50,'user1');
+INSERT INTO ORDERS(price,user_name) VALUES (700.50,'user1');
+INSERT INTO ORDERS(price,user_name) VALUES (350.50,'user1');
+INSERT INTO ORDERS(price,user_name) VALUES (520.50,'user1');
+INSERT INTO ORDERS(price,user_name) VALUES (710.50,'user1');
+INSERT INTO ORDERS(price,user_name) VALUES (800.50,'user2');
+INSERT INTO ORDERS(price,user_name) VALUES (650.50,'user3');
+INSERT INTO ORDERS(price,user_name) VALUES (651.50,'user3');
+INSERT INTO ORDERS(price,user_name) VALUES (652.50,'user3');
+
+INSERT INTO ORDERITEMS(position,price,order_id) VALUES (1, 70.50, 1);
+INSERT INTO ORDERITEMS(position,price,order_id) VALUES (2, 50.50,1);
+INSERT INTO ORDERITEMS(position,price,order_id) VALUES (3, 60.50,1);
+INSERT INTO ORDERITEMS(position,price,order_id) VALUES (4, 65.50,1);
+INSERT INTO ORDERITEMS(position,price,order_id) VALUES (4, 65.50,1);
+INSERT INTO ORDERITEMS(position,price,order_id) VALUES (4, 65.50,2);
+INSERT INTO ORDERITEMS(position,price,order_id) VALUES (4, 65.50,2);
+INSERT INTO ORDERITEMS(position,price,order_id) VALUES (4, 65.50,2);
