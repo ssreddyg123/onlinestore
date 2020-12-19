@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" th:lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta content="ie=edge" http-equiv="x-ua-compatible" />
+<title>OnlineStore Application</title>
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+<link rel="stylesheet" th:href="@{/css/main.css}" />
+</head>
+<body>
+	<div th:replace="fragments/header :: head"></div>
+	<div class="container">
+		<div layout:fragment="content"></div>
+	</div>
+	<div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>
